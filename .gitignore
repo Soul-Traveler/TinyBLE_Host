@@ -1,0 +1,55 @@
+# ========================
+# Keil MDK Ignores
+# ========================
+*.bat
+*.uvoptx
+*.uvguix.*
+*.uvgui.*
+*.bak
+*.dep
+*.d
+*.o
+*.crf
+*.lnp
+*.axf
+*.htm
+*.map
+*.sct
+*.hex
+*.lst
+*.ier
+*.iex
+JLinkLog.txt
+*.scvd
+Objects/
+Listings/
+DebugConfig/
+RTE/
+.cmsis/
+
+# ========================
+# CLion / CMake Ignores
+# ========================
+cmake-build-*/
+.idea/
+CMakeLists.txt.user
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+Testing/
+Makefile
+
+# ========================
+# EIDE / VSCode Ignores
+# ========================
+.vscode/
+.eide/
+build/
+*.uvprojx.tmp
+
+# ========================
+# OS / Misc
+# ========================
+.DS_Store
+Thumbs.db
+*.log
