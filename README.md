@@ -6,7 +6,6 @@
 
 ## ✨ 项目特点
 
-* **极简轻量**：核心栈运行内存占用极低，flash空间占用较小。
 * **跨平台开发**：
     * **Windows**: 使用 CMake + MinGW。
     * **Embedded**: 完美运行于 STM32F103 (Bare-metal)。
