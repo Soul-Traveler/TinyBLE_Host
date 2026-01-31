@@ -194,14 +194,15 @@ void HID_Server_Notification_key(void *param) {
     }
 #else
     static uint8_t status = 0;
-    uint8_t count = 0;
+    static uint8_t count = 0;
     if (count++ > 5) {
         if (status == 0) {
             status = 8;
         } else {
             status = 0;
+            count = 0;
         }
-        count = 0;
+
         hid_reoprt_data_2[0] = status;
         att_notification(hid_service[15].handle, hid_reoprt_data_2, sizeof(hid_reoprt_data_2)); // 0x0024
     }

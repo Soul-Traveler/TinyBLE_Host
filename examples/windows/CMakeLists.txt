@@ -68,7 +68,7 @@ file(GLOB_RECURSE PLATFORM_SRCS "${PLATFORM_DIR}/windows/*.c")
 
 # 4.3 第三方库
 file(GLOB_RECURSE CRYPTO_SRCS "${LIB_DIR}/crypto/source/*.c")
-file(GLOB SBC_SRCS "${LIB_DIR}/sbc/sbc/*.c")
+#file(GLOB SBC_SRCS "${LIB_DIR}/sbc/sbc/*.c")
 
 # =========================================================
 # 5. 生成可执行文件

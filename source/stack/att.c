@@ -184,7 +184,7 @@ uint16_t att_handle_read_blob_req(uint8_t *rx_buffer, uint16_t len, uint8_t *tx_
     STREAM_TO_UINT16(Offset, att_rx_buffer);
 
     // ---检查 Handle 是否合法 ---
-    if (Attribute_Handle >= gatt_server_manager.gatt_server_pri_service_count || att_vaul_space[Attribute_Handle] == NULL) 
+    if (/*Attribute_Handle >= gatt_server_manager.gatt_server_pri_service_count ||*/ att_vaul_space[Attribute_Handle] == NULL)
     {
         uint8_t *err_ptr = tx_buffer;
         UINT8_TO_STREAM(err_ptr, ATT_RSP_ERROR);

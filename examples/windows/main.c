@@ -12,7 +12,7 @@ int main(void) {
 
     // 2. 第二步：初始化串口 (保证硬件就绪)
     // 建议加个判断，如果串口打不开直接报错
-    if (bt_uart_init_windows("COM5", 115200) != 0) {
+    if (bt_uart_init_windows("COM4", 115200) != 0) {
         printf("UART init failed!\n");
         return -1;
     }
