@@ -154,7 +154,7 @@ uint8_t phybusif_input(void)
             /*读取acl*/
             uart_bt_read(bt_rx_buffer + read_pos, acl_param_len);
             /*acl处理，丢给hci*/
-            bt_acl_data_process(bt_rx_buffer, read_pos + event_param_len);
+            bt_acl_data_process(bt_rx_buffer, read_pos + acl_param_len);
             read_pos = 0;
             h4_read_status = BT_H4_W4_TRANSPORT_TYPE;
             break;
