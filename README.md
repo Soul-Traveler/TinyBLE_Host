@@ -35,3 +35,4 @@ cmake --build build
     [ ] 安全性增强: 完善 SMP 模块，支持 Passkey Entry（密码输入）配对模式，以及保存密钥。
     [ ] BLE UART: 添加私有透传服务 (Throughput Demo)。
     [ ] 完善内存分配策略，支持动态申请内存。
+    [ ] 完善边界检查，增加鲁棒性。
